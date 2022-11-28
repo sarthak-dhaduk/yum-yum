@@ -1,0 +1,29 @@
+ERROR - 2022-11-10 06:35:05 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'add_item where item_name='Bargar'' at line 1
+CRITICAL - 2022-11-10 06:35:05 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'add_item where item_name='Bargar'' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('Delete form add_item where item_name=\'Bargar\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('Delete form add_item where item_name=\'Bargar\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('Delete form add_item where item_name=\'Bargar\'')
+ 4 APPPATH\Models\Item_model.php(41): CodeIgniter\Database\BaseConnection->query('Delete form add_item where item_name=\'Bargar\'')
+ 5 APPPATH\Controllers\ItemController.php(186): App\Models\Item_model->delete_data('Bargar')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\ItemController->delete_added_item_table()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ItemController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 10:16:36 --> Class 'App\Controllers\Item_model' not found
+in APPPATH\Controllers\OrdersController.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\OrdersController->edit_orderd_quantity()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrdersController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 10:36:39 --> Undefined index: photo
+in APPPATH\Views\added_item.php on line 30.
+ 1 APPPATH\Views\added_item.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: photo', 'APPPATH\\Views\\added_item.php', 30, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\added_item.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('added_item', [], true)
+ 5 APPPATH\Controllers\OrdersController.php(31): view('added_item', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\OrdersController->edit_orderd_quantity()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrdersController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

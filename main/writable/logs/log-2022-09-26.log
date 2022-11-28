@@ -1,0 +1,8 @@
+CRITICAL - 2022-09-26 23:07:55 --> Undefined property: stdClass::$role
+in APPPATH\Models\Login_model.php on line 35.
+ 1 APPPATH\Models\Login_model.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$role', 'APPPATH\\Models\\Login_model.php', 35)
+ 2 APPPATH\Controllers\Login_controller.php(41): App\Models\Login_model->check('s@gmail.com', '1234567@Sa')
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login_controller->check_user()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login_controller))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,43 @@
+CRITICAL - 2022-11-20 02:20:21 --> Argument 3 passed to App\Models\Cart_model::delete_data() must be of the type string, null given, called in C:\xampp\htdocs\main\app\Controllers\CartController.php on line 183
+in APPPATH\Models\Cart_Model.php on line 54.
+ 1 APPPATH\Controllers\CartController.php(183): App\Models\Cart_model->delete_data('Sarthak', 'sdhaduk666@rku.ac.in', null)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\CartController->delete_cart_table()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CartController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-20 02:23:25 --> Argument 3 passed to App\Models\Cart_model::delete_data() must be of the type string, null given, called in C:\xampp\htdocs\main\app\Controllers\CartController.php on line 183
+in APPPATH\Models\Cart_Model.php on line 54.
+ 1 APPPATH\Controllers\CartController.php(183): App\Models\Cart_model->delete_data('Sarthak', 'sdhaduk666@rku.ac.in', null)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\CartController->delete_cart_table()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CartController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-20 02:26:50 --> Argument 3 passed to App\Models\Cart_model::delete_data() must be of the type string, null given, called in C:\xampp\htdocs\main\app\Controllers\CartController.php on line 183
+in APPPATH\Models\Cart_Model.php on line 54.
+ 1 APPPATH\Controllers\CartController.php(183): App\Models\Cart_model->delete_data('Sarthak', 'sdhaduk666@rku.ac.in', null)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\CartController->delete_cart_table()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CartController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-20 21:09:07 --> Undefined variable: userdata
+in APPPATH\Views\index2.php on line 28.
+ 1 APPPATH\Views\index2.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: userdata', 'APPPATH\\Views\\index2.php', 28, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('index2', [], true)
+ 5 APPPATH\Controllers\Home2.php(9): view('index2')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home2->index2()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home2))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-20 23:33:34 --> Trying to get property 'fullname' of non-object
+in APPPATH\Views\edit_orderd_table.php on line 37.
+ 1 APPPATH\Views\edit_orderd_table.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'fullname\' of non-object', 'APPPATH\\Views\\edit_orderd_table.php', 37, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\edit_orderd_table.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('edit_orderd_table', [], true)
+ 5 APPPATH\Controllers\OrdersController.php(39): view('edit_orderd_table', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\OrdersController->edit_orderd_table()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrdersController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

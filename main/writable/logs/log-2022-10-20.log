@@ -1,0 +1,5 @@
+ERROR - 2022-10-20 02:06:00 --> Email: sendWithSmtp throwed fwrite(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1420C0CF:SSL routines:ssl_write_internal:protocol is shutdown
+CRITICAL - 2022-10-20 02:11:22 --> Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\Email\Email.php on line 2058.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

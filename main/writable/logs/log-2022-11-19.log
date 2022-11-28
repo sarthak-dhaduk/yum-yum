@@ -1,0 +1,183 @@
+ERROR - 2022-11-19 07:31:21 --> Column 'description' cannot be null
+CRITICAL - 2022-11-19 07:31:21 --> Column 'description' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `review` (`fullname`, `email`, `item_name`, `description`, `rating`) VALUES (\'Sarthak\', \'sdhaduk666@rku.ac.in\', \'Italian Cone\', NULL, \'0\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `review` (`fullname`, `email`, `item_name`, `description`, `rating`) VALUES (\'Sarthak\', \'sdhaduk666@rku.ac.in\', \'Italian Cone\', NULL, \'0\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `review` (`fullname`, `email`, `item_name`, `description`, `rating`) VALUES (\'Sarthak\', \'sdhaduk666@rku.ac.in\', \'Italian Cone\', NULL, \'0\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `review` (`fullname`, `email`, `item_name`, `description`, `rating`) VALUES (:fullname:, :email:, :item_name:, :description:, :rating:)', [...], false)
+ 5 APPPATH\Controllers\ReviewsController.php(42): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\ReviewsController->give_review()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReviewsController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 08:25:50 --> Undefined index: photo
+in APPPATH\Views\shop.php on line 48.
+ 1 APPPATH\Views\shop.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: photo', 'APPPATH\\Views\\shop.php', 48, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\shop.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('shop', [], true)
+ 5 APPPATH\Controllers\CartController.php(50): view('shop', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\CartController->cart_u()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CartController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 12:24:44 --> Illegal string offset 'item_name'
+in APPPATH\Views\cart.php on line 46.
+ 1 APPPATH\Views\cart.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'item_name\'', 'APPPATH\\Views\\cart.php', 46, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('cart', [], true)
+ 5 APPPATH\Controllers\CartController.php(42): view('cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\CartController->cart_u()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CartController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 12:31:44 --> Argument 1 passed to CodeIgniter\BaseModel::findAll() must be of the type int, string given, called in C:\xampp\htdocs\main\app\Controllers\CartController.php on line 41
+in SYSTEMPATH\BaseModel.php on line 567.
+ 1 APPPATH\Controllers\CartController.php(41): CodeIgniter\BaseModel->findAll('where fullname=\'harshil\' AND email=\'hadiyalharshil5@gmail.com\' AND item_name=\'Italian Pasta\'')
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\CartController->cart_u()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CartController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 12:39:13 --> Argument 2 passed to view() must be of the type array, object given, called in C:\xampp\htdocs\main\app\Controllers\CartController.php on line 42
+in SYSTEMPATH\Common.php on line 1121.
+ 1 APPPATH\Controllers\CartController.php(42): view('cart', Object(stdClass))
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\CartController->cart_u()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CartController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 12:42:13 --> Argument 2 passed to view() must be of the type array, object given, called in C:\xampp\htdocs\main\app\Controllers\CartController.php on line 42
+in SYSTEMPATH\Common.php on line 1121.
+ 1 APPPATH\Controllers\CartController.php(42): view('cart', Object(stdClass))
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\CartController->cart_u()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CartController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 12:42:16 --> Argument 2 passed to view() must be of the type array, object given, called in C:\xampp\htdocs\main\app\Controllers\CartController.php on line 42
+in SYSTEMPATH\Common.php on line 1121.
+ 1 APPPATH\Controllers\CartController.php(42): view('cart', Object(stdClass))
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\CartController->cart_u()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CartController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 12:53:31 --> Undefined variable: dataa
+in APPPATH\Views\cart.php on line 42.
+ 1 APPPATH\Views\cart.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: dataa', 'APPPATH\\Views\\cart.php', 42, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('cart', [], true)
+ 5 APPPATH\Controllers\CartController.php(42): view('cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\CartController->cart_u()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CartController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 12:53:52 --> Undefined variable: dataa
+in APPPATH\Views\cart.php on line 42.
+ 1 APPPATH\Views\cart.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: dataa', 'APPPATH\\Views\\cart.php', 42, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('cart', [], true)
+ 5 APPPATH\Controllers\CartController.php(52): view('cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\CartController->cart_u()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CartController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 12:59:22 --> Illegal string offset 'item_name'
+in APPPATH\Views\cart.php on line 46.
+ 1 APPPATH\Views\cart.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'item_name\'', 'APPPATH\\Views\\cart.php', 46, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('cart', [], true)
+ 5 APPPATH\Controllers\CartController.php(42): view('cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\CartController->cart_u()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CartController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 13:04:24 --> Illegal string offset 'item_name'
+in APPPATH\Views\cart.php on line 46.
+ 1 APPPATH\Views\cart.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'item_name\'', 'APPPATH\\Views\\cart.php', 46, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('cart', [], true)
+ 5 APPPATH\Controllers\CartController.php(42): view('cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\CartController->cart_u()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CartController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 13:04:27 --> Illegal string offset 'item_name'
+in APPPATH\Views\cart.php on line 46.
+ 1 APPPATH\Views\cart.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'item_name\'', 'APPPATH\\Views\\cart.php', 46, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('cart', [], true)
+ 5 APPPATH\Controllers\CartController.php(42): view('cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\CartController->cart_u()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CartController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 13:04:27 --> Illegal string offset 'item_name'
+in APPPATH\Views\cart.php on line 46.
+ 1 APPPATH\Views\cart.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'item_name\'', 'APPPATH\\Views\\cart.php', 46, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('cart', [], true)
+ 5 APPPATH\Controllers\CartController.php(42): view('cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\CartController->cart_u()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CartController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 13:04:28 --> Illegal string offset 'item_name'
+in APPPATH\Views\cart.php on line 46.
+ 1 APPPATH\Views\cart.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'item_name\'', 'APPPATH\\Views\\cart.php', 46, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('cart', [], true)
+ 5 APPPATH\Controllers\CartController.php(42): view('cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\CartController->cart_u()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CartController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 13:04:28 --> Illegal string offset 'item_name'
+in APPPATH\Views\cart.php on line 46.
+ 1 APPPATH\Views\cart.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'item_name\'', 'APPPATH\\Views\\cart.php', 46, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('cart', [], true)
+ 5 APPPATH\Controllers\CartController.php(42): view('cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\CartController->cart_u()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CartController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 13:04:28 --> Illegal string offset 'item_name'
+in APPPATH\Views\cart.php on line 46.
+ 1 APPPATH\Views\cart.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'item_name\'', 'APPPATH\\Views\\cart.php', 46, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('cart', [], true)
+ 5 APPPATH\Controllers\CartController.php(42): view('cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\CartController->cart_u()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CartController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 13:09:40 --> Illegal string offset 'item_name'
+in APPPATH\Views\cart.php on line 46.
+ 1 APPPATH\Views\cart.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'item_name\'', 'APPPATH\\Views\\cart.php', 46, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('cart', [], true)
+ 5 APPPATH\Controllers\CartController.php(42): view('cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\CartController->cart_u()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CartController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-19 13:09:41 --> Illegal string offset 'item_name'
+in APPPATH\Views\cart.php on line 46.
+ 1 APPPATH\Views\cart.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'item_name\'', 'APPPATH\\Views\\cart.php', 46, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\cart.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('cart', [], true)
+ 5 APPPATH\Controllers\CartController.php(42): view('cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\CartController->cart_u()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CartController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

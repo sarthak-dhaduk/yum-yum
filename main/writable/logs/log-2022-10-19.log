@@ -1,0 +1,403 @@
+CRITICAL - 2022-10-19 04:51:05 --> Call to a member function getRow() on bool
+in APPPATH\Models\Delete.php on line 14.
+ 1 APPPATH\Controllers\UserDashboardController.php(61): App\Models\Delete->single_register_delete('sdhaduk666@rku.ac.in')
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserDashboardController->delete_register_table()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserDashboardController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 04:51:45 --> Undefined variable $userdata
+in APPPATH\Views\tables_basic.php on line 28.
+ 1 APPPATH\Views\tables_basic.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userdata', 'APPPATH\\Views\\tables_basic.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tables_basic.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('tables_basic', [], true)
+ 5 APPPATH\Controllers\UserDashboardController.php(64): view('tables_basic')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserDashboardController->delete_register_table()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserDashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 04:56:01 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 874.
+ 1 SYSTEMPATH\Model.php(586): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(763): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\UserDashboardController.php(71): CodeIgniter\Model->__call('fetch_data', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserDashboardController->delete_register_table()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserDashboardController))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 04:56:41 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 874.
+ 1 SYSTEMPATH\Model.php(586): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(763): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\UserDashboardController.php(71): CodeIgniter\Model->__call('fetch_data', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserDashboardController->delete_register_table()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserDashboardController))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 04:57:44 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\tables_basic.php on line 28.
+ 1 APPPATH\Views\tables_basic.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Views\\tables_basic.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tables_basic.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('tables_basic', [], true)
+ 5 APPPATH\Controllers\UserDashboardController.php(74): view('tables_basic', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserDashboardController->delete_register_table()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserDashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 04:58:06 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\tables_basic.php on line 28.
+ 1 APPPATH\Views\tables_basic.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Views\\tables_basic.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tables_basic.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('tables_basic', [], true)
+ 5 APPPATH\Controllers\UserDashboardController.php(74): view('tables_basic', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserDashboardController->delete_register_table()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserDashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 05:00:07 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\tables_basic.php on line 28.
+ 1 APPPATH\Views\tables_basic.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Views\\tables_basic.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tables_basic.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('tables_basic', [], true)
+ 5 APPPATH\Controllers\UserDashboardController.php(74): view('tables_basic', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserDashboardController->delete_register_table()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserDashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 05:00:08 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\tables_basic.php on line 28.
+ 1 APPPATH\Views\tables_basic.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Views\\tables_basic.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tables_basic.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('tables_basic', [], true)
+ 5 APPPATH\Controllers\UserDashboardController.php(74): view('tables_basic', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserDashboardController->delete_register_table()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserDashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 05:01:49 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\tables_basic.php on line 28.
+ 1 APPPATH\Views\tables_basic.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Views\\tables_basic.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tables_basic.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('tables_basic', [], true)
+ 5 APPPATH\Controllers\UserDashboardController.php(74): view('tables_basic', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserDashboardController->delete_register_table()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserDashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 05:04:35 --> Cannot access offset of type string on string
+in APPPATH\Views\tables_basic.php on line 29.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('tables_basic', [], true)
+ 4 APPPATH\Controllers\UserDashboardController.php(74): view('tables_basic', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserDashboardController->delete_register_table()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserDashboardController))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 05:04:50 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\tables_basic.php on line 28.
+ 1 APPPATH\Views\tables_basic.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Views\\tables_basic.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tables_basic.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('tables_basic', [], true)
+ 5 APPPATH\Controllers\UserDashboardController.php(74): view('tables_basic', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserDashboardController->delete_register_table()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserDashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 05:05:55 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\tables_basic.php on line 28.
+ 1 APPPATH\Views\tables_basic.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Views\\tables_basic.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tables_basic.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('tables_basic', [], true)
+ 5 APPPATH\Controllers\UserDashboardController.php(67): view('tables_basic', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserDashboardController->delete_register_table()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserDashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 05:05:58 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\tables_basic.php on line 28.
+ 1 APPPATH\Views\tables_basic.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Views\\tables_basic.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tables_basic.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('tables_basic', [], true)
+ 5 APPPATH\Controllers\UserDashboardController.php(67): view('tables_basic', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserDashboardController->delete_register_table()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserDashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 05:05:59 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\tables_basic.php on line 28.
+ 1 APPPATH\Views\tables_basic.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Views\\tables_basic.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tables_basic.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('tables_basic', [], true)
+ 5 APPPATH\Controllers\UserDashboardController.php(67): view('tables_basic', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserDashboardController->delete_register_table()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserDashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 05:05:59 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\tables_basic.php on line 28.
+ 1 APPPATH\Views\tables_basic.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Views\\tables_basic.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tables_basic.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('tables_basic', [], true)
+ 5 APPPATH\Controllers\UserDashboardController.php(67): view('tables_basic', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserDashboardController->delete_register_table()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserDashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 05:05:59 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\tables_basic.php on line 28.
+ 1 APPPATH\Views\tables_basic.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Views\\tables_basic.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tables_basic.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('tables_basic', [], true)
+ 5 APPPATH\Controllers\UserDashboardController.php(67): view('tables_basic', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserDashboardController->delete_register_table()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserDashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 05:10:03 --> Cannot access offset of type string on string
+in APPPATH\Views\tables_basic.php on line 29.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('tables_basic', [], true)
+ 4 APPPATH\Controllers\UserDashboardController.php(67): view('tables_basic', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserDashboardController->delete_register_table()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserDashboardController))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 05:11:20 --> Cannot access offset of type string on string
+in APPPATH\Views\tables_basic.php on line 29.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('tables_basic', [], true)
+ 4 APPPATH\Controllers\UserDashboardController.php(67): view('tables_basic', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserDashboardController->delete_register_table()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserDashboardController))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 05:12:54 --> Cannot access offset of type string on string
+in APPPATH\Views\tables_basic.php on line 29.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('tables_basic', [], true)
+ 4 APPPATH\Controllers\UserDashboardController.php(66): view('tables_basic', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserDashboardController->delete_register_table()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserDashboardController))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 05:15:01 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\UserDashboardController.php on line 65.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserDashboardController->delete_register_table()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserDashboardController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 05:18:11 --> Cannot access offset of type string on string
+in APPPATH\Views\tables_basic.php on line 29.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('tables_basic', [], true)
+ 4 APPPATH\Controllers\UserDashboardController.php(67): view('tables_basic', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserDashboardController->delete_register_table()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserDashboardController))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 05:18:50 --> Cannot access offset of type string on string
+in APPPATH\Views\tables_basic.php on line 32.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('tables_basic', [], true)
+ 4 APPPATH\Controllers\UserDashboardController.php(67): view('tables_basic', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserDashboardController->delete_register_table()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserDashboardController))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 05:21:04 --> Attempt to read property "profilepic" on string
+in APPPATH\Views\tables_basic.php on line 29.
+ 1 APPPATH\Views\tables_basic.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "profilepic" on string', 'APPPATH\\Views\\tables_basic.php', 29)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tables_basic.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('tables_basic', [], true)
+ 5 APPPATH\Controllers\UserDashboardController.php(67): view('tables_basic', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserDashboardController->delete_register_table()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserDashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 05:23:14 --> Attempt to read property "fullname" on string
+in APPPATH\Views\tables_basic.php on line 32.
+ 1 APPPATH\Views\tables_basic.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "fullname" on string', 'APPPATH\\Views\\tables_basic.php', 32)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tables_basic.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('tables_basic', [], true)
+ 5 APPPATH\Controllers\UserDashboardController.php(67): view('tables_basic', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserDashboardController->delete_register_table()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserDashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 05:23:44 --> Attempt to read property "email" on string
+in APPPATH\Views\tables_basic.php on line 34.
+ 1 APPPATH\Views\tables_basic.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "email" on string', 'APPPATH\\Views\\tables_basic.php', 34)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tables_basic.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('tables_basic', [], true)
+ 5 APPPATH\Controllers\UserDashboardController.php(67): view('tables_basic', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserDashboardController->delete_register_table()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserDashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 05:25:04 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\tables_basic.php on line 28.
+ 1 APPPATH\Views\tables_basic.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Views\\tables_basic.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tables_basic.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('tables_basic', [], true)
+ 5 APPPATH\Controllers\UserDashboardController.php(67): view('tables_basic', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserDashboardController->delete_register_table()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserDashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 05:25:59 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\tables_basic.php on line 28.
+ 1 APPPATH\Views\tables_basic.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Views\\tables_basic.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tables_basic.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('tables_basic', [], true)
+ 5 APPPATH\Controllers\UserDashboardController.php(67): view('tables_basic', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserDashboardController->delete_register_table()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserDashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 05:29:13 --> foreach() argument must be of type array|object, null given
+in APPPATH\Controllers\UserDashboardController.php on line 68.
+ 1 APPPATH\Controllers\UserDashboardController.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Controllers\\UserDashboardController.php', 68)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserDashboardController->delete_register_table()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserDashboardController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 05:31:03 --> foreach() argument must be of type array|object, null given
+in APPPATH\Controllers\UserDashboardController.php on line 68.
+ 1 APPPATH\Controllers\UserDashboardController.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Controllers\\UserDashboardController.php', 68)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserDashboardController->delete_register_table()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserDashboardController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 05:31:20 --> syntax error, unexpected token ")"
+in APPPATH\Controllers\UserDashboardController.php on line 68.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\UserDashboardController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\UserDashboardController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\UserDashboardController')
+ 4 SYSTEMPATH\CodeIgniter.php(846): class_exists('\\App\\Controllers\\UserDashboardController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 05:31:58 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\UserDashboardController.php on line 69.
+ 1 APPPATH\Controllers\UserDashboardController.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\UserDashboardController.php', 69)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserDashboardController->delete_register_table()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserDashboardController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 05:32:00 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\UserDashboardController.php on line 69.
+ 1 APPPATH\Controllers\UserDashboardController.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\UserDashboardController.php', 69)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserDashboardController->delete_register_table()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserDashboardController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 05:32:00 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\UserDashboardController.php on line 69.
+ 1 APPPATH\Controllers\UserDashboardController.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\UserDashboardController.php', 69)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserDashboardController->delete_register_table()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserDashboardController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 05:33:12 --> Undefined variable $userdata
+in APPPATH\Controllers\UserDashboardController.php on line 68.
+ 1 APPPATH\Controllers\UserDashboardController.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userdata', 'APPPATH\\Controllers\\UserDashboardController.php', 68)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserDashboardController->delete_register_table()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserDashboardController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 05:33:24 --> Array to string conversion
+in APPPATH\Controllers\UserDashboardController.php on line 68.
+ 1 APPPATH\Controllers\UserDashboardController.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\UserDashboardController.php', 68)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserDashboardController->delete_register_table()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserDashboardController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 05:34:14 --> Undefined variable $userdata
+in APPPATH\Controllers\UserDashboardController.php on line 67.
+ 1 APPPATH\Controllers\UserDashboardController.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userdata', 'APPPATH\\Controllers\\UserDashboardController.php', 67)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserDashboardController->delete_register_table()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserDashboardController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 05:34:28 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\UserDashboardController.php on line 68.
+ 1 APPPATH\Controllers\UserDashboardController.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\UserDashboardController.php', 68)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserDashboardController->delete_register_table()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserDashboardController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 05:37:00 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\UserDashboardController.php on line 68.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserDashboardController->delete_register_table()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserDashboardController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 05:37:02 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\UserDashboardController.php on line 68.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserDashboardController->delete_register_table()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserDashboardController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 05:37:21 --> Undefined variable $userdata
+in APPPATH\Controllers\UserDashboardController.php on line 67.
+ 1 APPPATH\Controllers\UserDashboardController.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userdata', 'APPPATH\\Controllers\\UserDashboardController.php', 67)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserDashboardController->delete_register_table()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserDashboardController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 05:38:09 --> Cannot access offset of type string on string
+in APPPATH\Controllers\UserDashboardController.php on line 68.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserDashboardController->delete_register_table()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserDashboardController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 10:09:02 --> Cannot access offset of type string on string
+in APPPATH\Views\index3.php on line 33.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('index3', [], true)
+ 4 APPPATH\Controllers\UserDashboardController.php(43): view('index3', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserDashboardController->ManageUsers_u()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserDashboardController))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 10:21:14 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\index3.php on line 32.
+ 1 APPPATH\Views\index3.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Views\\index3.php', 32)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index3.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('index3', [], true)
+ 5 APPPATH\Controllers\UserDashboardController.php(43): view('index3', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserDashboardController->ManageUsers_u()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserDashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 11:54:38 --> Undefined variable $roll
+in APPPATH\Controllers\UserDashboardController.php on line 103.
+ 1 APPPATH\Controllers\UserDashboardController.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $roll', 'APPPATH\\Controllers\\UserDashboardController.php', 103)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserDashboardController->delete_register_table()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserDashboardController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

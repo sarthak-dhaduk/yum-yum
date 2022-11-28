@@ -1,0 +1,255 @@
+CRITICAL - 2022-10-13 01:00:49 --> ini_set(): Session ini settings cannot be changed when a session is active
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 71.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Session ini settings cannot be changed when a session is active', 'SYSTEMPATH\\Session\\Handlers\\FileHandler.php', 71)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(71): ini_set('session.save_path', 'ROOTPATH\\writable\\session')
+ 3 SYSTEMPATH\Config\Services.php(606): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+ 4 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 5 SYSTEMPATH\Config\BaseService.php(192): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 6 SYSTEMPATH\Config\Services.php(585): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 7 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\Services::session()
+ 8 APPPATH\Controllers\Home.php(141): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->InsertData()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-13 01:02:10 --> Call to undefined function display_validation_error()
+in APPPATH\Views\register.php on line 23.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('register', [], true)
+ 4 APPPATH\Controllers\Home.php(232): view('register', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->InsertData()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-13 01:03:44 --> Call to undefined function display_validation_error()
+in APPPATH\Views\register.php on line 23.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('register', [], true)
+ 4 APPPATH\Controllers\Home.php(230): view('register', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->InsertData()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-13 01:09:24 --> session_destroy(): Trying to destroy uninitialized session
+in APPPATH\Views\register.php on line 73.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_destroy(): Trying to destroy uninitialized session', 'APPPATH\\Views\\register.php', 73)
+ 2 APPPATH\Views\register.php(73): session_destroy()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\register.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('register', [], true)
+ 6 APPPATH\Controllers\Home.php(54): view('register')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->register()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-13 01:09:26 --> session_destroy(): Trying to destroy uninitialized session
+in APPPATH\Views\register.php on line 73.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_destroy(): Trying to destroy uninitialized session', 'APPPATH\\Views\\register.php', 73)
+ 2 APPPATH\Views\register.php(73): session_destroy()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\register.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('register', [], true)
+ 6 APPPATH\Controllers\Home.php(54): view('register')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->register()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-13 01:09:28 --> session_destroy(): Trying to destroy uninitialized session
+in APPPATH\Views\register.php on line 73.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_destroy(): Trying to destroy uninitialized session', 'APPPATH\\Views\\register.php', 73)
+ 2 APPPATH\Views\register.php(73): session_destroy()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\register.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('register', [], true)
+ 6 APPPATH\Controllers\Home.php(54): view('register')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->register()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-13 01:09:37 --> session_destroy(): Trying to destroy uninitialized session
+in APPPATH\Views\register.php on line 73.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_destroy(): Trying to destroy uninitialized session', 'APPPATH\\Views\\register.php', 73)
+ 2 APPPATH\Views\register.php(73): session_destroy()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\register.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('register', [], true)
+ 6 APPPATH\Controllers\Home.php(54): view('register')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->register()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-13 01:34:35 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2022-10-13 01:40:18 --> Email: sendWithSmtp throwed fsockopen(): Unable to connect to smtp.gmail.com:25 (A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond)
+CRITICAL - 2022-10-13 05:36:59 --> session_destroy(): Trying to destroy uninitialized session
+in APPPATH\Controllers\Home.php on line 173.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_destroy(): Trying to destroy uninitialized session', 'APPPATH\\Controllers\\Home.php', 173)
+ 2 APPPATH\Controllers\Home.php(173): session_destroy()
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->logout()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-13 05:37:30 --> session_destroy(): Trying to destroy uninitialized session
+in APPPATH\Controllers\Home.php on line 173.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_destroy(): Trying to destroy uninitialized session', 'APPPATH\\Controllers\\Home.php', 173)
+ 2 APPPATH\Controllers\Home.php(173): session_destroy()
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->logout()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-13 05:38:55 --> session_destroy() expects exactly 0 arguments, 1 given
+in APPPATH\Controllers\Home.php on line 173.
+ 1 APPPATH\Controllers\Home.php(173): session_destroy('uname')
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->logout()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-13 05:41:35 --> session_destroy(): Trying to destroy uninitialized session
+in APPPATH\Controllers\Home.php on line 173.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_destroy(): Trying to destroy uninitialized session', 'APPPATH\\Controllers\\Home.php', 173)
+ 2 APPPATH\Controllers\Home.php(173): session_destroy()
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->logout()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-13 05:43:30 --> ini_set(): Session ini settings cannot be changed when a session is active
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 71.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Session ini settings cannot be changed when a session is active', 'SYSTEMPATH\\Session\\Handlers\\FileHandler.php', 71)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(71): ini_set('session.save_path', 'ROOTPATH\\writable\\session')
+ 3 SYSTEMPATH\Config\Services.php(606): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+ 4 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 5 SYSTEMPATH\Config\BaseService.php(192): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 6 SYSTEMPATH\Config\Services.php(585): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 7 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\Services::session()
+ 8 APPPATH\Views\master.php(61): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 9 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master.php')
+10 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+11 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('master', [], true)
+12 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('cart', [], true)
+13 APPPATH\Controllers\Home.php(41): view('cart')
+14 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->cart()
+15 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+16 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-13 05:43:38 --> ini_set(): Session ini settings cannot be changed when a session is active
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 71.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Session ini settings cannot be changed when a session is active', 'SYSTEMPATH\\Session\\Handlers\\FileHandler.php', 71)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(71): ini_set('session.save_path', 'ROOTPATH\\writable\\session')
+ 3 SYSTEMPATH\Config\Services.php(606): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+ 4 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 5 SYSTEMPATH\Config\BaseService.php(192): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 6 SYSTEMPATH\Config\Services.php(585): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 7 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\Services::session()
+ 8 APPPATH\Views\master.php(61): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 9 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master.php')
+10 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+11 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('master', [], true)
+12 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('cart', [], true)
+13 APPPATH\Controllers\Home.php(41): view('cart')
+14 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->cart()
+15 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+16 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-13 05:47:07 --> session_destroy(): Trying to destroy uninitialized session
+in APPPATH\Controllers\Home.php on line 147.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_destroy(): Trying to destroy uninitialized session', 'APPPATH\\Controllers\\Home.php', 147)
+ 2 APPPATH\Controllers\Home.php(147): session_destroy()
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->login()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-13 05:48:29 --> session_destroy(): Trying to destroy uninitialized session
+in APPPATH\Controllers\Home.php on line 176.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_destroy(): Trying to destroy uninitialized session', 'APPPATH\\Controllers\\Home.php', 176)
+ 2 APPPATH\Controllers\Home.php(176): session_destroy()
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->logout()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-13 05:48:30 --> session_destroy(): Trying to destroy uninitialized session
+in APPPATH\Controllers\Home.php on line 176.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_destroy(): Trying to destroy uninitialized session', 'APPPATH\\Controllers\\Home.php', 176)
+ 2 APPPATH\Controllers\Home.php(176): session_destroy()
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->logout()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-13 05:48:34 --> Object of class CodeIgniter\Session\Session could not be converted to string
+in APPPATH\Controllers\Home.php on line 154.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->login()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-13 05:48:35 --> Object of class CodeIgniter\Session\Session could not be converted to string
+in APPPATH\Controllers\Home.php on line 154.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->login()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-13 05:50:38 --> session_destroy(): Trying to destroy uninitialized session
+in APPPATH\Controllers\Home.php on line 176.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_destroy(): Trying to destroy uninitialized session', 'APPPATH\\Controllers\\Home.php', 176)
+ 2 APPPATH\Controllers\Home.php(176): session_destroy()
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->logout()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-13 05:52:11 --> session_destroy(): Trying to destroy uninitialized session
+in APPPATH\Controllers\Home.php on line 176.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_destroy(): Trying to destroy uninitialized session', 'APPPATH\\Controllers\\Home.php', 176)
+ 2 APPPATH\Controllers\Home.php(176): session_destroy()
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->logout()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-13 05:53:04 --> session_destroy(): Trying to destroy uninitialized session
+in APPPATH\Views\master.php on line 2.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_destroy(): Trying to destroy uninitialized session', 'APPPATH\\Views\\master.php', 2)
+ 2 APPPATH\Views\master.php(2): session_destroy()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('master', [], true)
+ 6 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('index', [], true)
+ 7 APPPATH\Controllers\Home.php(9): view('index')
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->index()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-13 05:54:15 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\main\app\Controllers\Home.php on line 154
+in SYSTEMPATH\Common.php on line 1121.
+ 1 APPPATH\Controllers\Home.php(154): view('index', null)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->login()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-13 05:54:36 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\main\app\Controllers\Home.php on line 154
+in SYSTEMPATH\Common.php on line 1121.
+ 1 APPPATH\Controllers\Home.php(154): view('index', null)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->login()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-13 06:15:35 --> syntax error, unexpected token "}", expecting ";"
+in APPPATH\Controllers\Home.php on line 164.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(846): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-13 08:30:18 --> Class "App\Controllers\Edit_profile_model" not found
+in APPPATH\Controllers\Activate_Account_Controller.php on line 64.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Activate_Account_Controller->forget_Password_action()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Activate_Account_Controller))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-13 08:30:39 --> Undefined variable $unique_id
+in APPPATH\Controllers\Activate_Account_Controller.php on line 74.
+ 1 APPPATH\Controllers\Activate_Account_Controller.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $unique_id', 'APPPATH\\Controllers\\Activate_Account_Controller.php', 74)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Activate_Account_Controller->forget_Password_action()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Activate_Account_Controller))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-13 08:32:09 --> Email: sendWithSmtp throwed fgets(): SSL: An existing connection was forcibly closed by the remote host
